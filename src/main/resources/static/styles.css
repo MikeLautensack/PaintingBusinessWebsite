@@ -42,9 +42,6 @@
 /*****General Styles*****/
 /************************/
 
-body {
-
-}
 
 /****************/
 /*****Header*****/
@@ -106,31 +103,8 @@ nav ul[data-visable="true"] {
     transform: translateX(0%);
 }
 
-nav ul li {
-
-}
-
-.logo {
-
-}
-
-.link-icons {
-
-}
-
 /*****Hero*****/
 
-header h1 {
-
-}
-
-header h4 {
-
-}
-
-header a div {
-
-}
 
 /*****************/
 /*****Service*****/
@@ -142,17 +116,19 @@ header a div {
 
 .service-heading {
     margin: 1rem auto;
+    text-align: center;
 }
 
 .service-cards {
-    margin: 0 5vw;
-    padding: 5vw;
+    margin: 0 5vw 5vw;
+    padding: 0 5vw;
     gap: 5vw;
+    grid-template-columns: 1fr;
 }
 
 .service-card {
     padding: 1rem;
-    border-radius: .2rem;
+    border-radius: .5rem;
     border: 1px solid black;
 }
 
@@ -173,78 +149,111 @@ header a div {
     text-align: center;
 }
 
-.service-card-heading {
-
-}
-
-.service-card-p {
-   
-}
-
-.service-card-ul {
- 
-}
-
-.service-card-info ul li {
-
-}
-
 /********************/
 /*****Who We Are*****/
 /********************/
 
-.who-we-are {
-
-}
-
 .who-we-are h1 {
-
+    margin: 5vw;
+    text-align: center;
+    padding: 0 5vw;
 }
 
-.who-we-are h2 {
-
+.who-we-are h4 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 5vw;
+    margin: 5vw;
 }
 
 .profiles {
-
+    justify-content: center;
+    align-items: center;
+    margin: 5vw;
+    padding: 5vw;
+    gap: 5vw;
+    grid-template-columns: 1fr;
 }
 
 .profile {
-
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: 5vw;
 }
 
-.profile div {
-
+.head-shot {
+   width: 100%;
+   aspect-ratio: 1;
+   background-image: url(assets/profile1.png);
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 
 .profile h3 {
+    margin: 0 auto;
+    text-align: center;
+}
 
+.profile p {
+    margin: 0 auto;
+    text-align: center;
 }
 
 /**********************/
 /*****Testamonials*****/
 /**********************/
 
-.testimonials {
-
-}
-
 .testimonials h1 {
-
+    margin: 0 auto;
+    text-align: center;
 }
 
-.testimonial {
-
+.testimonial-cards {
+    grid-template-columns: 1fr;
+    margin: 5vw;
+    padding: 5vw;
+    gap: 5vw;
 }
 
-.testimonial div {
-
+.testimonial-card {
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: 5vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.testimonial-photo {
+    background-image: url(assets/profile1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 1;
+    padding: 2.5vw;
+}
+
+.testimonial-card h4 {
+    padding: 2.5vw;
+}
+
+.testimonial-p {
+    padding: 2.5vw;
+    width: 100%;
+}
+
+.testimonial-p p {
+    padding: 2.5vw;
+}
+
 /****************/
 /*****Footer*****/
 /****************/
 
-
+footer {
+    height: 5rem;
+    border-top: 1px solid black;
+}
 
 @media (min-width: 45rem) {
 
@@ -302,5 +311,11 @@ header a div {
     .service-cards {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    /****************/
+    /*****Footer*****/
+    /****************/
+
+
 
 }
